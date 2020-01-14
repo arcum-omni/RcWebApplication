@@ -1,12 +1,12 @@
 Choose an object like a Product, Automobile, Animal, or another of your choosing:
-	[ RemoteControlCar ]
+	[ Vehicle.cs ]
 
 Make a view with an HTML form that will allow you to create your object:
 	In the controller: create an object and populate it with the form data
 	(Hint: Your controller action method should take a IFormCollection object)
 	
-	RcCar
-		carID			int		00001
+	Vehicle
+		vehicleID			int		00001
 		make			string	Associated
 		model			string	B6.1DL
 		motorTurns		number; ie 17.5, 8.5, etc
