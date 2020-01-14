@@ -6,14 +6,11 @@ Make a view with an HTML form that will allow you to create your object:
 	(Hint: Your controller action method should take a IFormCollection object)
 	
 	Vehicle
-		vehicleID			int		00001
+		vehicleMakID	int		00001
 		make			string	Associated
 		model			string	B6.1DL
-		motorTurns		number; ie 17.5, 8.5, etc
-		esc				string	XR10 Pro G2
-		servo			string	RT1709
 		batteryCapacity	int		4800
-		receiver		string	RX491
+		motorSize		number	ie 17.5, 8.5, etc
 		dateAssembled	date	Jan 5, 2020
 
 Make another view that will allow you to create your object but this time use model binding
