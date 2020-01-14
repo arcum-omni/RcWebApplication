@@ -1,0 +1,25 @@
+Choose an object like a Product, Automobile, Animal, or another of your choosing:
+	[ RemoteControlCar ]
+
+Make a view with an HTML form that will allow you to create your object:
+	In the controller: create an object and populate it with the form data
+	(Hint: Your controller action method should take a IFormCollection object)
+	
+	RcCar
+		carID			int		00001
+		make			string	Associated
+		model			string	B6.1DL
+		motorTurns		number; ie 17.5, 8.5, etc
+		esc				string	XR10 Pro G2
+		servo			string	RT1709
+		batteryCapacity	int		4800
+		receiver		string	RX491
+		dateAssembled	date	Jan 5, 2020
+
+Make another view that will allow you to create your object but this time use model binding
+
+In both cases, add your object to a database using ADO.NET
+	Create a database class with a method to do the insert (we don't want too much code in our controllers)
+	This method should be called for both Action Methods (the modelbinding and html form data versions)
+	
+	// Add object to DB
