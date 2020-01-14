@@ -1,7 +1,42 @@
 ﻿
 @{
-    ViewData["Title"] = "Vehicle Form, Hut8";
+	ViewData["Title"] = "Vehicle Form, Hut8";
 }
 
 <h4>Add Vehicle to Database</h4>
 
+@if (ViewData["Message"] != null)
+{
+	<h3 class="alert alert-success">@ViewData["Message"]</h3>
+}
+else
+{
+	<form method="post">
+		<label for="vehicle-make">Make:</label>
+		<input type="text" name="vehicle-make" />
+		<span>*</span>
+		<br />
+
+		<label for="vehicle-model">Model:</label>
+		<input type="text" name="vehicle-model" />
+		<span>*</span>
+		<br />
+
+		<label for="battery-size">Battery Capacity (mAh):</label>
+		<input type="text" name="battery-size" />
+		<span>*</span>
+		<br />
+
+		<label for="motor-size">Motor Size (turns):</label>
+		<input type="text" name="motor-size" />
+		<span>*</span>
+		<br />
+
+		<label for="build-date">Date of Build:</label>
+		<input type="date" name="build-date" />
+		<span>*</span>
+		<br />
+
+		<input type="submit" value="Add Vehicle" class="btn btn-primary" />
+	</form>
+}

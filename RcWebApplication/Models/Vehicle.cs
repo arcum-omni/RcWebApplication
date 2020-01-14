@@ -16,7 +16,7 @@ namespace RcWebApplication.Models
 
         public int BatterySize { get; set; }
 
-        public float MotorSize { get; set; }
+        public double MotorSize { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime BuildDate { get; set; }
