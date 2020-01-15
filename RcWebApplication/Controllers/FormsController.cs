@@ -29,7 +29,7 @@ namespace RcWebApplication.Controllers
             v.MotorSize = Convert.ToDouble(data["motor-size"]);
             v.BuildDate = Convert.ToDateTime(data["build - date"]);
 
-            // Add to DataBase
+            // Add to DataBase, ADO.net
 
             ViewData["Message"] = "Vehicle Added Successfully";
 
