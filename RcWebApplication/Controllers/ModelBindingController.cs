@@ -21,7 +21,11 @@ namespace RcWebApplication.Controllers
             if (ModelState.IsValid)
             {
                 // VehicleDB.Add(v); // Add object to database
-                return RedirectToAction("Index", "Home");
+
+                // return RedirectToAction("Index", "Home"); // I didn't like this meathod, because I wouldn't know if my ADD was successful or the page crashed and reloaded.
+                
+                ViewData["Message"] = "Vehicle Added Successfully";
+                return View();
             }
             else
             {
