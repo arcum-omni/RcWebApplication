@@ -1,4 +1,4 @@
-﻿
+﻿@model Vehicle
 @{
     ViewData["Title"] = "Vehicle Form, Hut8";
 }
@@ -7,5 +7,32 @@
 <p>Model Binding Portion of Assignment</p>
 <br />
 
+<form method="post">
+	<label asp-for="Make"></label>
+	<input asp-for="Make" />
+	<span asp-validation-for="Make"></span>
+	<br />
 
+	<label asp-for="Model"></label>
+	<input asp-for="Model" />
+	<span asp-validation-for="Model"></span>
+	<br />
+
+	<label asp-for="BatterySize"></label>
+	<input asp-for="BatterySize" />
+	<span asp-validation-for="BatterySize"></span>
+	<br />
+
+	<label asp-for="MotorSize"></label>
+	<input asp-for="MotorSize" />
+	<span asp-validation-for="MotorSize"></span>
+	<br />
+
+	<label asp-for="BuildDate"></label>
+	<input asp-for="BuildDate" />
+	<span asp-validation-for="BuildDate"></span>
+	<br />
+
+	<input type="submit" value="Build Vehicle" />
+</form>
 
