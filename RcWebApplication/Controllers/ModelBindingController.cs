@@ -20,13 +20,12 @@ namespace RcWebApplication.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Add to database
+                // VehicleDB.Add(v); // Add object to database
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                // Model state is invalid
-                // let user view errors
+                // Model state is invalid, let user view errors
                 return View();
             }
         }
